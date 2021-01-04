@@ -90,6 +90,9 @@ module.exports = (env) => {
       filename: 'bundle.js',
     },
     plugins: [
+      new CopyPlugin({
+        patterns: [{ from: '_redirects', to: 'public/_redirects' }],
+      }),
       new HtmlWebpackPlugin({
         template: path.join(__dirname, 'public', 'index.html'),
       }),
