@@ -37,7 +37,7 @@ export class TopBar extends Component<{}> {
                 <SearchIcon />
               </div>
               <InputBase
-                placeholder={i18n.t('general.search')}
+                placeholder={i18n.t('general.search') + 'Loiiii'}
                 className="input-wrapper"
                 inputProps={{ 'aria-label': 'search' }}
               />
